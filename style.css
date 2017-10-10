@@ -1,0 +1,13 @@
+
+  body {
+    display: flex;
+    min-height: 100vh;
+      
+    flex-direction: column;
+  }
+nav a, a {
+    color : black!important;
+}
+.add{
+    margin-top: 20px;
+}
