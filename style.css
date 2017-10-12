@@ -3,13 +3,19 @@
     src: url('Novar.ttf')
 }
   html,body{
-    height: 100vh;
+   
     transition: all linear 0.4s;
+      
+      
+    min-height: 100vh;
   }
 nav a, a {
     color : black!important;
     
     
+}
+main,header,footer{
+    position: relative;
 }
 nav a, footer h6{
     text-transform: uppercase;
@@ -27,16 +33,16 @@ footer p{
 nav a:hover {
     background-color: transparent!important;
 }
+
 footer{
-    position: absolute;
-    min-width: 100%;
-    bottom: 0;
+    height: auto;
     background-color: #adba95!important;
     
 }
 main{
-    height: 80vh;
+    min-height: 80vh;
 }
+
 .link{
     display: inline-block;
 }
@@ -106,6 +112,28 @@ button{
     background-color: black!important;
     height: 4rem!important;
 }
+@media only screen and (min-width: 600px) {
+    .contact h3{
+    font-size: calc(3.5em + 1vmin);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    line-height: 3rem;
+}
+.contact h6{
+    font-size: calc(1em + 1vmin);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    
+}
+    button{
+    width: 15rem;
+    background-color: black!important;
+    height: 3rem!important;
+}
+}
+
 .desc{
     position: absolute;
     z-index: 11;
