@@ -1,7 +1,10 @@
-
+@font-face{
+    font-family: 'myFont';
+    src: url('Novar.ttf')
+}
   html,body{
     height: 100vh;
-    
+    transition: all linear 0.4s;
   }
 nav a, a {
     color : black!important;
@@ -48,17 +51,27 @@ main{
 .link:hover::after{
     width: 100%;
 }
-.contact
+/*.contact
 {
     position: fixed;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     
-}
-p{
+}*/
+.about p{
     margin: 1.5rem 0 1.5rem 0;
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Roboto', sans-serif;
+    font-size: calc(0.4em + 1vmin);
+    font-weight: 300;
+    
+}
+.about {
+    margin-top: 10vh;
+}
+.focus{
+    font-weight: 800;
+    font-size: calc(1.2em + 1vmin);
     
 }
 footer img{
@@ -75,6 +88,24 @@ footer img{
     width: 100%;
     
 }
+.contact h3{
+    font-size: calc(6.2em + 1vmin);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    line-height: 6rem;
+}
+.contact h6{
+    font-size: calc(2em + 1vmin);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 6rem;
+    margin-bottom: 3rem;
+}
+button{
+    width: 15rem;
+    background-color: black!important;
+    height: 4rem!important;
+}
 .desc{
     position: absolute;
     z-index: 11;
@@ -83,7 +114,7 @@ footer img{
     width: 100%;
     background-color: white;
     opacity: 0.6;
-    transition: height linear 0.4s;
+    transition: height ease-in 0.4s;
    
 }
 .desc-wrap{
@@ -91,9 +122,22 @@ footer img{
     border-left: 2px  solid red;
    
 }
+.desc-wrap h3{
+    font-family: 'myFont';
+    font-weight: 900;
+    font-size:3rem;
+    letter-spacing: 0.1rem;
+   
+}
+.desc-wrap span{
+    font-family: 'myFont';
+    font-weight: 900;
+    font-size:3rem;
+    
+}
 .collection:hover > .desc{
     
-    height: 25%;
+    height: 30%;
 }
 /*header{
     min-height: 10%!important;
