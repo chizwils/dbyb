@@ -1,65 +1,91 @@
-@font-face{
+@font-face {
     font-family: 'myFont';
     src: url('Novar.ttf')
 }
-  html,body{
-   
+
+html,
+body {
+
     transition: all linear 0.4s;
-      
-      
+
+
     min-height: 100vh;
-  }
-nav a, a {
-    color : black!important;
-    
-    
 }
-main,header,footer{
+
+nav a,
+a {
+    color: black!important;
+
+
+}
+
+main,
+header,
+footer {
     position: relative;
 }
-nav a, footer h6{
+
+nav a,
+footer h6 {
     text-transform: uppercase;
     font-size: 0.8rem!important;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-nav li a{
+
+nav li a {
     line-height: 2rem;
 }
-footer p{
+
+footer p {
     font-size: 0.8rem;
     font-family: 'Raleway', sans-serif;
 }
+
 nav a:hover {
     background-color: transparent!important;
 }
 
-footer{
+footer {
     height: auto;
     background-color: #adba95!important;
-    
+
 }
-main{
+
+main {
     min-height: 80vh;
 }
 
-.link{
+.link {
     display: inline-block;
 }
-.link::after{
+
+.link::after {
     content: '';
     display: block;
-    width:0px;
+    width: 0px;
     height: 2px;
     background: #000;
     transition: width .3s
 }
-.link:hover::after{
+
+.link:hover::after {
     width: 100%;
 }
-.active{
-border-bottom: 2px solid black;
+
+.active {
+    display: inline-block;
 }
+
+.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+
+}
+
 /*.contact
 {
     position: fixed;
@@ -68,155 +94,217 @@ border-bottom: 2px solid black;
     transform: translate(-50%, -50%);
     
 }*/
-.about p{
+
+.about p {
     margin: 1.5rem 0 1.5rem 0;
-   font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: calc(0.4em + 1vmin);
     font-weight: 300;
-    
+
 }
+
 .about {
     margin-top: 10vh;
 }
-.focus{
+
+.focus {
     font-weight: 800;
     font-size: calc(1.2em + 1vmin);
-    
+
 }
-footer img{
+
+footer img {
     width: 20px;
     height: 100%;
 }
-.collection{
-   position: relative;
-    border:none;
+
+.collection {
+    position: relative;
+    border: none;
 
 }
-.collection img{
-   max-width:100%; /*Ensure the width scales to the width of the parent container*/
-width:auto; /* Not required, but sometimes is nice to ensure the width not being overridden by other factors like browser quirks */
-height: auto;
+
+.collection img {
+    max-width: 100%;
+    /*Ensure the width scales to the width of the parent container*/
+    width: auto;
+    /* Not required, but sometimes is nice to ensure the width not being overridden by other factors like browser quirks */
+    height: auto;
     -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-    
+    filter: grayscale(100%);
+
 }
-.contact h3{
+
+.contact h3 {
     font-size: calc(6.2em + 1vmin);
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     line-height: 6rem;
 }
-.contact h6{
+
+.contact h6 {
     font-size: calc(2em + 1vmin);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     line-height: 6rem;
     margin-bottom: 3rem;
 }
-button{
+
+button {
     width: 15rem;
     background-color: black!important;
     height: 4rem!important;
-}
+ }
 @media only screen and (min-width: 600px) {
-    .contact h3{
-    font-size: calc(3.5em + 1vmin);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    line-height: 3rem;
-}
-.contact h6{
-    font-size: calc(1em + 1vmin);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    line-height: 1rem;
-    margin-bottom: 1rem;
-    
-}
-    button{
-    width: 15rem;
-    background-color: black!important;
-    height: 3rem!important;
-}
-}
-.t{
-    width: 100%;
-}
-.th{
-    position: relative;
-}
-.name{
-    
-    
-    font-size: calc(10em + 1vmin);
-    font-weight: 900;
-   
+    .contact h3 {
+        font-size: calc(3.5em + 1vmin);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        line-height: 3rem;
+    }
+    .contact h6 {
+        font-size: calc(1em + 1vmin);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        line-height: 1rem;
+        margin-bottom: 1rem;
+
+    }
+    button {
+        width: 15rem;
+        background-color: black!important;
+        height: 3rem!important;
+    }
 }
 
-.prices{
-     font-size: 5rem;
+.t {
+    width: 100%;
+}
+
+.th {
+    position: relative;
+}
+
+.name {
+
+
+    font-size: calc(10em + 1vmin);
+    font-weight: 900;
+    
+
+}
+
+.prices {
+    font-size: 5rem;
     font-weight: 400;
     background-color: #adba95;
     padding: 1rem;
     border-radius: 20px;
     color: white;
-    font-family:'Montserrat', sans-serif ;
+    font-family: 'Montserrat', sans-serif;
 }
-.details{
+
+.details {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1rem;
+    letter-spacing: 0.03rem;
 }
-.moving{
+
+.moving {
     position: relative;
     right: 10px;
     bottom: 0;
-}
-@media only screen and (min-width: 100px) {
-    .moving{
-    
-        position: relative;
-    }
-}
-.moving a i{
-    
-   font-size: calc(5em + 1vmin);
-   color: #adba95;
-    
-  
-   
-    text-align: center;
-   
+    width:50%;
 }
 
-.moving .l:hover > i{
-    
-    -webkit-transform:translateX(-50%);
-    transform: translateX(-50%);
+.moving a i {
+
+    font-size: calc(5em + 1vmin);
+    color: #adba95;
+
+
+
+
+    text-align: center;
+
 }
-.moving  .r:hover > i{
-    
-    -webkit-transform:translateX(50%);
-    transform: translateX(50%);
+
+
+.moving .l:hover > i {
+
+    -webkit-transform: translateX(-30%);
+    transform: translateX(-30%);
 }
-#two{
+
+.moving .r:hover > i {
+
+    -webkit-transform: translateX(30%);
+    transform: translateX(30%);
+}
+
+@media only screen and (min-width: 700px) {
+    nav a{
+        font-size: 0.7rem!important;
+        font-weight: 900;
+    }
+    .moving {
+
+        position: relative;
+    }
+    .name {
+
+
+        font-size: calc(4.5em + 1vmin);
+        font-weight: 900;
+        
+        letter-spacing: 0.05rem;
+
+    }
+    .prices {
+        font-size: 2rem;
+        font-weight: 400;
+        background-color: #adba95;
+        padding: 1rem;
+        border-radius: 20px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+    .details {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .moving a i {
+
+        font-size: calc(3em + 1vmin);
+        color: #adba95;
+
+
+
+        text-align: center;
+
+    }
+
+}
+
+.moving span {
+    color: black;
+}
+
+#two {
     visibility: hidden;
     position: absolute;
     left: 0;
     right: 0;
 }
-.desc-wrap{
-   
-   
-}
-.desc-wrap h3{
-    
-   
-}
-.desc-wrap span{
-    
-    
-}
+
+.desc-wrap {}
+
+.desc-wrap h3 {}
+
+.desc-wrap span {}
 
 /*header{
     min-height: 10%!important;
