@@ -6,7 +6,7 @@
 html,
 body {
 
-    transition: all linear 0.4s;
+    transition: all linear 0.5s;
 
 
     min-height: 100vh;
@@ -209,6 +209,7 @@ button {
     font-weight: 300;
     font-size: 1rem;
     letter-spacing: 0.03rem;
+    
 }
 
 .moving {
@@ -243,7 +244,7 @@ button {
     transform: translateX(30%);
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 721px) and (max-width:1080px){
     nav a{
         font-size: 0.7rem!important;
         font-weight: 900;
@@ -280,9 +281,6 @@ button {
 
         font-size: calc(3em + 1vmin);
         color: #adba95;
-
-
-
         text-align: center;
 
     }
